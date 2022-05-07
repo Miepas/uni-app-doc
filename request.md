@@ -94,3 +94,8 @@
 ## mian.js引入
     // 引入请求封装，将app参数传递到配置中
     require('/src/config/request.js')(app)
+## 使用方法
+    uni.$u.http.get('/example')
+        .then((res) => {
+          console.log(res);
+        });
