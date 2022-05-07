@@ -1,4 +1,5 @@
-// 登录
+## uni-app 微信登录方法
+    // 登录
     async login() {
       const code = await this.code();
       const that = this;
@@ -18,7 +19,7 @@
                     avatar: rest.userInfo.avatarUrl,
                   })
                   .then((ress) => {
-                    uni.setStorageSync('access_token', `Bearer ${ress.data.access_token}`);
+                    uni.setStorageSync('access_token', `Bearer ${ressdata.access_token}`);
                     that.$store.commit('setUserInfo');
                   });
               },
