@@ -24,4 +24,10 @@
     import { toPath } from '@/config/router.js'
 
     //引入全局方法
-    Vue.prototype.$testTo = toPath
+    Vue.prototype.$toPath = toPath
+## 使用方法
+    //html使用
+    @click="$toPath('/pages/index/index')"
+    
+    //js使用
+    this.$toPath('/pages/index/index')
