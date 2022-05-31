@@ -10,13 +10,13 @@
       if (timer) {
         return;
       }
+      if (isLogin && !uni.getStorageSync("token")) {
+        uni.$u.route("pages/login/login");
+      } else {
+        uni.$u.route(url);
+      }
       timer = setTimeout(() => {
         timer = null;
-        if (isLogin && !uni.getStorageSync("token")) {
-          uni.$u.route("pages/login/login");
-        } else {
-          uni.$u.route(url);
-        }
       }, delay);
     }
 ## main.js引入
