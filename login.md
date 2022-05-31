@@ -1,5 +1,5 @@
 ## uni-app 微信登录方法
-    // 登录
+    // 登录喵喵
     async login() {
       const code = await this.code();
       const that = this;
